@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./public/style/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="shortcut icon" href="./public/images/lionsgeek.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Project</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" style="background-color: #72bf9e;">
+    <div class="container-fluid">
+
+      <!-- Home page and Brand logo-->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./public/images/lionsgeek.svg" alt="logo" class="d-inline-block align-text-top">
+      </a>
+
+      <a class="nav-link" href="./public/pages/about.html">About</a>
+      <a class="nav-link" href="./public/pages/contact.html">Contact</a>
+
+      <!-- Sign Up Button -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signup_modal">
+        Sign Up
+      </button>
+
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signup_modal" tabindex="-1" aria-labelledby="signup_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signup_modalLabel">Join LionsGeek now!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div>
+                  <label class="form-label">Full Name</label><br>
+                  <input class="form-control" type="text" name="Full name" placeholder="Enter your name">
+                </div>
+
+                <div>
+                  <label class="form-label">Phone Number</label><br>
+                  <input class="form-control" type="number" name="Phone number" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">E-mail</label><br>
+                  <input class="form-control" type="email" name="E-mail" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">Password</label><br>
+                  <input class="form-control" type="password" name="Password" placeholder="Enter a password">
+                </div>
+
+                <div>
+                  <label class="form-label">Confirm password</label><br>
+                  <input class="form-control" type="password" name="Confirm Password"
+                    placeholder="Confirm your password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Log In Button -->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login_modal">
+        Log In
+      </button>
+
+      <!-- Log In Modal -->
+      <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="login_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="login_modalLabel">Glad to see again!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div>
+                  <label class="form-label">E-mail</label><br>
+                  <input class="form-control" type="email" name="E-mail" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">Password</label><br>
+                  <input class="form-control" type="password" name="Password" placeholder="Enter a password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <!-- Title -->
+    <h1 class="title">Gallery</h1>
+
+    <!-- Carousel -->
+    <div class="gallery-carousel">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./public/images/gallery1.jpg" class="d-block" height="100%" width="100%" alt="gallery">
+          </div>
+          <div class="carousel-item">
+            <img src="./public/images/gallery2.jpg" class="d-block" height="100%" width="100%" alt="gallery">
+          </div>
+          <div class="carousel-item">
+            <img src="./public/images/gallery3.jpg" class="d-block" height="100%" width="100%" alt="gallery">
+          </div>
+          <div class="carousel-item active">
+            <img src="./public/images/gallery4.jpg" class="d-block" height="100%" width="100%" alt="gallery">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- images -->
+    <div class="gallery-img1">
+      <img src="./public/images/hackaton1.jpg" height="100%" width="100%" alt="hackaton1">
+    </div>
+    <div class="gallery-img2">
+      <img src="./public/images/hackaton2.png" height="100%" width="100%" alt="hackaton2">
+    </div>
+    <div class="gallery-img3">
+      <img src="./public/images/hackaton4.png" height="100%" width="100%" alt="hackaton4">
+    </div>
+    <div class="gallery-img4">
+      <img src="./public/images/hackaton3.png" height="100%" width="100%" alt="hackaton3">
+    </div>
+
+    <!-- video -->
+    <div class="gallery-video">
+      <video src="./public/videos/hackaton.mp4" height="100%" width="100%" controls="controls" type="video/mp4"></video>
+    </div>
+  </section>
+
+  
+
+  <!-- anchor -->
+  <a class="scroll_up" href="#top">
+    <img src="./public/images/scrollup.png" alt="back to the top" />
+  </a>
+
+  <div class="empty"></div>
+  <i class="fa-solid fa-code fa-beat" style="color: #d8ba02;"></i>
+  <!-- footer -->
+  <footer class="page-footer">
+    <img src="./public/images/lionsgeek.svg" alt="logo">
+    <div class="footer-contact">
+      <p>4eme étage, Ain Sebaa Center, Route de Rabat, Casablanca, Morocco
+        <br>+212 522 662 660
+        <br>contact@lionsgeek.ma
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

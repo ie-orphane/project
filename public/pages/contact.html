@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../style/app.css">
+  <link rel="shortcut icon" href="../images/lionsgeek.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Contact</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" style="background-color: #72bf9e;">
+    <div class="container-fluid">
+
+      <!-- Home page and Brand logo-->
+      <a class="navbar-brand title_white" href="../../index.html">
+        <img src="../images/lionsgeek.svg" alt="logo"class="d-inline-block align-text-top">
+      </a>
+
+      <a class="nav-link title_white" href="../pages/about.html">About</a>
+      <a class="nav-link title_white" href="../pages/contact.html">Contact</a>
+
+      <!-- Sign Up Button -->
+      <button type="button" class="btn title_white" data-bs-toggle="modal" data-bs-target="#signup_modal">
+        Sign Up
+      </button>
+
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signup_modal" tabindex="-1" aria-labelledby="signup_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signup_modalLabel">Join LionsGeek now!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div>
+                  <label class="form-label">Full Name</label><br>
+                  <input class="form-control" type="text" name="Full name" placeholder="Enter your name">
+                </div>
+
+                <div>
+                  <label class="form-label">Phone Number</label><br>
+                  <input class="form-control" type="number" name="Phone number" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">E-mail</label><br>
+                  <input class="form-control" type="email" name="E-mail" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">Password</label><br>
+                  <input class="form-control" type="password" name="Password" placeholder="Enter a password">
+                </div>
+
+                <div>
+                  <label class="form-label">Confirm password</label><br>
+                  <input class="form-control" type="password" name="Confirm Password"
+                    placeholder="Confirm your password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Log In Button -->
+      <button type="button" class="btn title_white" data-bs-toggle="modal" data-bs-target="#login_modal">
+        Log In
+      </button>
+
+      <!-- Log In Modal -->
+      <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="login_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="login_modalLabel">Glad to see again!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div>
+                  <label class="form-label">E-mail</label><br>
+                  <input class="form-control" type="email" name="E-mail" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                  <label class="form-label">Password</label><br>
+                  <input class="form-control" type="password" name="Password" placeholder="Enter a password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="d-flex block-mother">
+    <section class="block-child">
+      <h1 class="mx-2 mt-2 tt">Come Visit Us</h1>
+
+      <div class="block-grandchild">
+        <h4 class="mini-title">Where to find us</h4>
+        <hr>
+        <p>4eme étage, Ain Sebaa Center, Route de Rabat-، Km 8, Casablanca 20050</p>
+      </div>
+
+      <div class="block-grandchild">
+        <h4 class="mini-title">Contact</h4>
+        <hr>
+        <p>+212 522 662 660<br>contact@lionsgeek.ma</p>
+      </div>
+
+      <div class="block-grandchild">
+        <h4 class="mini-title"²>Working Hours</h4>
+        <hr>
+        <p>Monday - Friday<br>9:00 am - 6:00 pm</p>
+      </div>
+    </section>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.058438499376!2d-7.536431989949367!3d33.603788173217794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdb2f812837f%3A0xbbcfc74fbc11b2d9!2sLionsGeek!5e0!3m2!1sen!2sma!4v1696592007089!5m2!1sen!2sma"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
